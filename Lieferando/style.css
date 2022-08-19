@@ -1,124 +1,8 @@
-/* ubuntu-300 - latin */
-@font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 300;
-    src: local(''),
-         url('../fonts/ubuntu-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/ubuntu-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* ubuntu-regular - latin */
-  @font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/ubuntu-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/ubuntu-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* ubuntu-500 - latin */
-  @font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 500;
-    src: local(''),
-         url('../fonts/ubuntu-v20-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/ubuntu-v20-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* ubuntu-700 - latin */
-  @font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-         url('../fonts/ubuntu-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/ubuntu-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
-/*  Global */ 
-
 body {
-    height: 100vh; 
-    width: 100%; 
     margin: 0 auto;
-    font-family: 'Ubuntu'; 
-    font-weight: 300;
-    font-size: 24px;
-    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
 }
-
-
-/* Landingpage */
-
-.wrapper {
-    width: 100%; 
-    height: 100%; 
-    display: flex; 
-    background-color: #f2f2f2;
-}
-
-
-.left-sctn {
-    width: 50%;
-    display: flex; 
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    color: #887b7b;
-    margin-left: 4rem;
-    margin-left: 7rem;
-    margin-right: 2rem;
-}
-
-.left-sctn input {
-    height: 32px; 
-    width: 300px; 
-    outline: none;  
-    border-radius: 4px; 
-    margin: 2rem 0;
-    border: 1px solid grey;
-}
-
-.left-sctn button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px; 
-    border-radius: 4px; 
-    height: 43px; 
-    border: none;   
-    background-color: #000000;
-    color: white; 
-    letter-spacing: 2px;
-}
-
-.left-sctn button:hover {   
-    cursor: pointer; 
-    background-color: #283032;
-}
-
-.arrow-btn {
-    height: 30px;
-    width: 30px;
-    margin-left: 44px;    
-}
-
-
-.right-sctn {
-    width: 70%;
-    height: 100%;    
-    background-image: url('img/header-mhh.png');
-    background-position: -288px;
-    border-radius: 100% 0% 70% 30% / 41% 100% 0% 59%;
-}
-
-.logo {
-    height: 160px; 
-    margin-bottom: 16px; 
-}
-
-
-/* Restaurant Pizzaria Mamma Pia & Basket */
 
 .d-none {
     display: none;
@@ -129,9 +13,11 @@ body {
 }
 
 .toprow {
-   background-color: #f2f2f2; 
+    background-color: rgb(239 106 55); 
     color: white;
+    height: 10vh;
     display: flex; 
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -146,9 +32,9 @@ body {
 }
 
 #logo-lieferando {
-    width: 100px; 
+    width: 150px; 
     height: auto;
-    padding: 0 1.2rem; 
+    margin-top: 15px;
 }
 
 #flag {

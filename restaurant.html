@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mhh!</title>
+    <link rel="icon" type="image/x-icon" href="img/mhh!_black.svg">
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body onload="render()">
+
+<div class="toprow">
+    
+        <img src="img/mhh!_black.svg" alt="logo-lieferando" id="logo-lieferando">
+    
+    <div class="adresse">Gürtelstr. 8</div>
+   
+</div>
+    
+<div class="main">
+    <div id="menue-sctn">
+
+        <div id="header">
+            <div id="logo-wrapper">
+                <img src="img/logo.png" alt="logo" id="logo">
+            </div> 
+            
+        </div>
+
+        <h1 class="h1-name">Pizzaria Mamma Pia</h1>
+        <img src="img/sterne.png" alt="ranking"> <br>
+        <img src="img/40.png" alt="" class="min">
+
+        <h2 class="h2-kategorie">Pizzas</h2>
+        
+        
+        <div id="menue">
+
+        </div>
+    </div>
+    
+    <button class="button-mobil"  id="button-mobil" onclick="renderMobilePay()">Bezahlen</button>
+
+
+    <!-- warenkorb --> 
+
+    <div id="warenkorb-sctn" class="d-none warenkorb-sctn">
+        <h3 id="headline-warenkorb">Warenkorb</h3>
+        <img src="img/close.png" alt="close-icon" id="close-icon" onclick="closePayWindow()">
+    </div>
+
+</div> 
+
+</body>
+</html>
