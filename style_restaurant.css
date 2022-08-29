@@ -1,0 +1,316 @@
+/* Restaurant Pizzaria Mamma Pia & Basket */
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.toprow {
+   background-color: #f2f2f2; 
+    color: white;
+    display: flex; 
+    align-items: center;
+}
+
+.adresse {
+    border-bottom: 2px solid white;
+}
+
+.logo-sctn {
+    display: flex;
+    align-items: center;
+    margin: 0 80px;
+}
+
+#logo-lieferando {
+    width: 100px; 
+    height: auto;
+    padding: 0 1.2rem; 
+}
+
+#flag {
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    border: 3px solid white;
+    margin: 0 80px;
+}
+
+.main {
+    display: flex; 
+    height: 90vh;
+}
+
+#menue-sctn {
+    background-color: white;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+#header {
+    background-image: url("img/pizza.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-wrapper {
+    background-color: rgb(254 244 232);
+    border-radius: 100%;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    top: 64px;
+    box-shadow: 4px 4px 16px silver;
+}
+
+#logo {
+    height: 160px;
+    width: 160px;
+    border-radius: 100px;
+    object-fit: fill;
+}
+
+.h1-name {
+    padding-top: 20px;
+    padding-left: 20px;
+    color: rgb(75, 74, 74);
+    margin-bottom: 0px;
+    font-size: 1.3rem;
+}
+
+.h2-kategorie {
+    font-size: 1rem;
+    padding: 10px 10px;
+    height: max-content; 
+    background-color: rgb(238, 237, 236);
+    margin: 0 17px;
+    color: rgb(75, 74, 74);
+}
+
+/** Menu **/
+
+
+.dish {
+    color: rgb(75, 74, 74);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px 17px;
+    border: 1px solid rgb(238, 237, 236);
+    padding-bottom: 18.72px;
+    padding-left: 10px; 
+}
+.dish:hover {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#add-btn {
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgb( 238, 237, 236);
+    padding: 4px 4px;
+}
+#add-btn {
+    cursor: pointer;
+}
+
+#preis {
+    color: orange; 
+    font-weight: bold;
+}
+
+.min {
+    margin-left: 10px;
+   margin-bottom: 10px; 
+}
+/** Warenkorb **/ 
+
+
+.warenkorb-sctn {
+    background-color: white;
+    width: 70vw;
+    height: max-content; 
+    
+    align-items: center;
+    flex-direction: column; 
+    box-shadow: -1px 0px 7px 0px #aaa;
+    position: fixed; 
+    left: 15%;
+    top: 12%;
+}
+
+
+.headline-warenkorb {
+    padding: 20px 0;
+    color: grey;
+    font-weight: 700;
+    box-shadow: 1px 1px 16px silver;
+    height: 3vh;
+    width: 35vw;
+    text-align: center;
+}
+
+.headline-img {
+    align-items: center;
+}
+
+#close-icon {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    position: fixed;
+    left: 20px; 
+}
+
+.warenkorb {
+    width: 65vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 10px;
+    box-shadow: 0 5px 5px -5px #333;
+}
+.small-icon {
+    height: 10px;
+    width: 10px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 6px 6px;
+    cursor: pointer;
+}
+.icon-o {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.button-mobil {
+    background-color: rgb(18 95 202);
+    color: white;
+    height: 50px;
+    width: 97%;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    margin: 0 auto;
+}
+
+
+/** Bill **/
+
+.pay {
+    width: 65vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px 0;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex; 
+    justify-content: space-between;
+    padding: 8px 10px;
+}
+
+button {
+    background-color: rgb(18 95 202);
+    color: white;
+    height: 50px;
+    width: 96%;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover  {
+    background-color: rgb(46, 130, 247);
+}
+
+.button-mobil:hover {
+    background-color: rgb(46, 130, 247);
+}
+
+@media (min-width: 800px) {
+
+    .h1-name {
+        font-size: 25.6px;
+
+    }
+
+    #logo-wrapper {
+        background-color: rgb(254 244 232);
+        border-radius: 100%;
+        height: 160px;
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute; 
+        top: 100px;
+        box-shadow: 4px 4px 16px silver;
+
+    }
+
+    #logo {
+        height: 160px;
+        width: 160px;
+        border-radius: 100px;
+        object-fit: fill;
+    }
+}
+
+
+@media (min-width: 1000px) {
+
+    .warenkorb-sctn {
+        position: sticky;
+        top: 0; 
+        background-color: white;
+        width: 35vw;
+        height: max-content; 
+        display: flex; 
+        align-items: center;
+        flex-direction: column; 
+        box-shadow: -1px 0px 7px 0px #aaa;
+        
+    }
+
+    .warenkorb {
+        padding: 35px 0;
+        width: 35vw;
+    }
+
+    #menue-sctn {
+        width: 65vw;
+    }
+    
+
+    .button-mobil {
+        display: none;
+    }
+
+    #close-icon {
+        display: none;
+    }
+
+    .pay {
+        width: 30vw;
+    }
+}
