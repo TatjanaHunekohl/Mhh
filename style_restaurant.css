@@ -1,5 +1,15 @@
 /* Restaurant Pizzaria Mamma Pia & Basket */
 
+body {
+    height: 100vh; 
+    width: 100%; 
+    margin: 0 auto;
+    font-family: 'Ubuntu'; 
+    font-weight: 300;
+    font-size: 16px;
+    font-weight: 100;
+}
+
 .d-none {
     display: none;
 }
@@ -9,7 +19,7 @@
 }
 
 .toprow {
-   background-color: #f2f2f2; 
+   background-color: #0e1111; 
     color: white;
     display: flex; 
     align-items: center;
@@ -25,10 +35,10 @@
     margin: 0 80px;
 }
 
-#logo-lieferando {
-    width: 100px; 
+#logo-mhh {
+    width: 70px; 
     height: auto;
-    padding: 0 1.2rem; 
+    padding: 0.5rem 2rem;
 }
 
 #flag {
@@ -56,7 +66,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 200px;
+    height: 140px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -65,8 +75,8 @@
 #logo-wrapper {
     background-color: rgb(254 244 232);
     border-radius: 100%;
-    height: 160px;
-    width: 160px;
+    height: 130px;
+    width: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,18 +86,17 @@
 }
 
 #logo {
-    height: 160px;
-    width: 160px;
+    height: 130px;
+    width: 130px;
     border-radius: 100px;
     object-fit: fill;
 }
 
 .h1-name {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 5.5rem 20px 1rem 20px;
     color: rgb(75, 74, 74);
     margin-bottom: 0px;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .h2-kategorie {
@@ -128,7 +137,7 @@
 }
 
 #preis {
-    color: orange; 
+    color: 	#414a4c; 
     font-weight: bold;
 }
 
@@ -197,7 +206,7 @@
 }
 
 .button-mobil {
-    background-color: rgb(18 95 202);
+    background-color: rgb(0, 0, 0);
     color: white;
     height: 50px;
     width: 97%;
@@ -229,7 +238,7 @@
 }
 
 button {
-    background-color: rgb(18 95 202);
+    background-color: rgb(100, 103, 108);
     color: white;
     height: 50px;
     width: 96%;
@@ -244,21 +253,20 @@ button:hover  {
 }
 
 .button-mobil:hover {
-    background-color: rgb(46, 130, 247);
+    background-color: #0e1111;
 }
 
 @media (min-width: 800px) {
 
     .h1-name {
         font-size: 25.6px;
-
     }
 
     #logo-wrapper {
         background-color: rgb(254 244 232);
         border-radius: 100%;
-        height: 160px;
-        width: 160px;
+        height: 130px;
+        width: 130px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -269,8 +277,8 @@ button:hover  {
     }
 
     #logo {
-        height: 160px;
-        width: 160px;
+        height: 130px;
+        width: 130px;
         border-radius: 100px;
         object-fit: fill;
     }

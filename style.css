@@ -54,10 +54,6 @@ a {
     justify-content: center;
 }
 
-.txt-center  {
-    text-align: center; 
-}
-
 
 /* Homepage */
 
@@ -78,6 +74,10 @@ a {
     flex-direction: column;
     color: #232121;
     margin: 1rem 1rem; 
+}
+
+.subtitle {
+    width: 90%; 
 }
 
 .left-sctn input {
@@ -134,17 +134,23 @@ a {
 /* Index.html Media Queries */ 
 
 @media (min-width: 600px) {
+
+    a {
+        justify-content: flex-start; 
+    }
+
     .wrapper {
         flex-direction: row; 
     }
 
     .left-sctn {
-        width: 70%;
+        width: 50%;
         align-items: flex-start; 
+        padding-left: 3rem;
     }
 
     .right-sctn {
-        width: 30%; 
+        width: 50%; 
     }
 
     .left-sctn input {
@@ -163,7 +169,7 @@ a {
 @media (min-width: 800px) {
    
     .left-sctn {
-        margin: 7rem; 
+        padding-left: 5rem;
     }
 
     .left-sctn input {
