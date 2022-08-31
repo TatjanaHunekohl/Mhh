@@ -39,15 +39,14 @@ function render() {
 
         menue.innerHTML += `
         <div class="dish">
-        <div>
-            <h3 id="dish-name">${karte['name']}</h3>
-            <h5 id="dish-description">${karte['beschreibung']}</h5>
-            <span id="preis">${karte['preis']} €</span>
+            <div>
+                <h3 id="dish-name">${karte['name']}</h3>
+                <p id="dish-description">${karte['beschreibung']}</p>
+                <p id="preis">${karte['preis']} €</p>
+             </div>
+         <img src="img/plus-line-icon.png" alt="add-btn" id="add-btn" onclick="increaseAmount(${i})">
         </div>
-        <img src="img/plus.png" alt="add-btn" id="add-btn" onclick="increaseAmount(${i})">
-    </div>
         `;
-
     }
 }
 
@@ -82,10 +81,10 @@ function renderCart() {
             <div id="warenkorb" class="warenkorb">
                 <span id="amount">${speisekarte[i]['amount']}</span>
                 <span>${speisekarte[i]['name']}</span>
-                <img src="img/plus-32.png" alt="plus" class="small-icon" onclick="increaseAmount(${i})">
-                <img src="img/minus-32.png" alt="minus" class="small-icon" onclick="decreaseAmount(${i})">
+                <img src="img/plus-line-icon.png" alt="plus" class="small-icon" onclick="increaseAmount(${i})">
+                <img src="img/minus.png" alt="minus" class="small-icon" onclick="decreaseAmount(${i})">
                 <span>${speisekarte[i]['preis']} € </span>
-                <img src="img/trash-10-48.png" alt="trash-icon" class="icon-o" onclick=deleteItem(${i})>
+                <img src="img/bin.png" alt="trash-icon" class="icon-o" onclick=deleteItem(${i})>
             </div>
             
             `;
@@ -128,7 +127,7 @@ function renderPay() {
                 <span id="gesamt">${Zwisu+1.99}€</span>
             </div>
          </div> 
-         <button>Bezahlen (${Zwisu+1.99}) € </button>
+         <button onclick="paymentPopUp()" >Bezahlen (${Zwisu+1.99}) € </button>
     `;
 
     document.getElementById('button-mobil').innerHTML += `
@@ -143,12 +142,17 @@ function renderPay() {
 
 /** Mobile */
 
+
 function renderMobilePay() {
 
    document.getElementById('warenkorb-sctn').classList.remove('d-none');
    document.getElementById('warenkorb-sctn').classList.add('d-flex');
    document.getElementById('button-mobil').classList.add('d-none');
    document.getElementById('menue-sctn').classList.add('d-none');
+} 
+
+function paymentPopUp() {
+    window.alert('Sorry, this app has no payment integration.');
 }
 
 function closePayWindow() {
@@ -156,6 +160,17 @@ function closePayWindow() {
    document.getElementById('warenkorb-sctn').classList.remove('d-flex');
    document.getElementById('button-mobil').classList.remove('d-none');
    document.getElementById('menue-sctn').classList.remove('d-none');
+}
+
+
+/* Navigation   ------------------------ */
+
+function openNav() {
+    document.getElementById('nav-li').classList.remove('d-none');  
+}
+
+function closeNav() {
+    document.getElementById('nav-li').classList.add('d-none'); 
 }
 
 

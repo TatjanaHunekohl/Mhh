@@ -13,13 +13,20 @@
 <body onload="render()">
 
 <div class="toprow">
-    
-        <img src="img/mhh!_white.svg" alt="logo" id="logo-mhh">
-    
-    <div class="adresse">Gürtelstr. 8</div>
-
-    <img src="" alt="">
-   
+        <a id="logo-mhh" href="index.html"> <img src="img/mhh!_white.svg" alt="logo" ></a>
+        <span class="fw-400 menu">Speisekarte</span>   
+        <div>
+            <img src="img/menu-bar.svg" class="menu-bar" onclick="openNav()">
+            <li id="nav-li" class="nav-li d-none">
+                <div class="cloe-menu-bar-btn">
+                    <img src="img/menu-bar.svg" class="menu-bar" onclick="closeNav()">
+                </div>
+                <ul> <a href="restaurant.html">Speisekarte</a> </ul>
+                <ul> <a href="impressum.html">Impressum</a></ul>
+                <ul><a href="datenschutz.html">Datenschutz</a></ul>
+            </li>
+        </div>
+       
 </div>
     
 <div class="main">
@@ -27,30 +34,31 @@
 
         <div id="header">
             <div id="logo-wrapper">
-                <img src="img/logo.png" alt="logo" id="logo">
+                <img src="img/logo_olivio.png" alt="logo" id="logo">
             </div> 
             
         </div>
 
-        <h1 class="h1-name">Pizza Schmaus</h1>
+        <h1 class="h1-name">Pizza Olivio</h1>
        
-        <img src="img/40.png" alt="" class="min">
+        <!-- <img src="img/40.png" alt="" class="min"> --> 
 
-        <h2 class="h2-kategorie">Pizzas</h2>
+        <h2 class="h2-kategorie"> Beliebte Pizzas</h2>
         
-        
+       
         <div id="menue">
 
         </div>
+        
     </div>
     
-    <button class="button-mobil"  id="button-mobil" onclick="renderMobilePay()">Bezahlen</button>
+    <button class="button-mobil"  id="button-mobil" onclick="renderMobilePay()" >Bezahlen</button>
 
 
-    <!-- warenkorb --> 
+    <!-- warenkorb -------------------> 
 
     <div id="warenkorb-sctn" class="d-none warenkorb-sctn">
-        <h3 id="headline-warenkorb">Warenkorb</h3>
+        <h3 class="h3-cart" id="headline-warenkorb">Warenkorb</h3>
         <img src="img/close.png" alt="close-icon" id="close-icon" onclick="closePayWindow()">
     </div>
 
