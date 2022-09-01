@@ -65,6 +65,10 @@ h3 {
     justify-content: center;
 }
 
+.nav-li ul a:hover {
+    text-decoration: underline;
+}
+
 .nav-li ul {
     margin: 0; 
     padding: 0; 
